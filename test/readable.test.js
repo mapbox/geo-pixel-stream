@@ -22,7 +22,7 @@ test('PixelReader: constructor', function(assert) {
     blockSize: band.blockSize
   };
 
-  var reader = new readable.PixelReader(band, metadata);
+  var reader = new readable.PixelReader(src, 1);
 
   assert.deepEqual(reader.metadata, metadata, 'sets metadata');
   assert.ok(reader instanceof stream.Readable, 'is a readable stream');
@@ -47,7 +47,7 @@ test('PixelReader: reads', function(assert) {
     blockSize: band.blockSize
   };
 
-  var reader = new readable.PixelReader(band, metadata);
+  var reader = new readable.PixelReader(src, 1);
 
   var yBlocks = [];
 
@@ -86,7 +86,7 @@ test('PixelReader: can read alpha channel', function(assert) {
     blockSize: band.blockSize
   };
 
-  var reader = new readable.PixelReader(band, metadata);
+  var reader = new readable.PixelReader(src, 4);
 
   var yBlocks = [];
 

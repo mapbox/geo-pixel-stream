@@ -47,3 +47,9 @@ test('PixelWriter: constructor', function(assert) {
   assert.deepEqual(dst.geoTransform, metadata.geotransform, 'sets proper geotransform on output file');
   assert.ok(dst.srs.isSame(metadata.srs), 'sets proper srs on output file');
 });
+
+test('createWriteStream', function(assert) {
+  var writer = writable.createWriteStream(tmpfile());
+  assert.ok(writer instanceof stream.Writable, 'creates a writable stream');
+  assert.end();
+});

@@ -20,7 +20,6 @@ test('copying a raster', function(assert) {
     metadata = reader.metadata;
 
     q.defer(function(next) {
-      // console.log(readers._src.bands.count());
       var writer = pixels.createWriteStream(output);
       reader.pipe(writer).on('close', function() {
         assert.pass('Completed copy of band ' + reader.metadata.id);
