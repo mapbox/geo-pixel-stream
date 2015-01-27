@@ -1,6 +1,6 @@
 {
-  "name": "pixel-stream",
-  "version": "0.0.0",
+  "name": "geo-pixel-stream",
+  "version": "0.1.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,18 +8,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mapbox/pixel-stream.git"
+    "url": "https://github.com/mapbox/geo-pixel-stream.git"
   },
   "author": "Mapbox",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mapbox/pixel-stream/issues"
+    "url": "https://github.com/mapbox/geo-pixel-stream/issues"
   },
-  "homepage": "https://github.com/mapbox/pixel-stream",
+  "homepage": "https://github.com/mapbox/geo-pixel-stream",
   "dependencies": {
     "gdal": "^0.4.1"
   },
   "devDependencies": {
+    "mapnik": "^3.1.4",
     "mapnik-test-data": "https://mapbox-npm.s3.amazonaws.com/package/mapnik-test-data-2.0.3-fece0a9c546074a1479e9eae2333184029bb2279.tgz",
     "mkdirp": "^0.5.0",
     "queue-async": "^1.0.7",

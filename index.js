@@ -4,6 +4,6 @@ var transform = require('./lib/transform');
 
 module.exports = {
   createReadStreams: readable.createReadStreams,
-  createWriteStream: writable.createWriteStream,
+  createWriteStreams: writable.createWriteStreams,
   createTransformStream: transform.createTransformStream
 };
