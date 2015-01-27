@@ -20,9 +20,7 @@ test('copying a raster', function(assert) {
     metadata = reader.metadata;
 
     q.defer(function(next) {
-      // TODO: why can't I copy the alpha band?
-      // if (reader.metadata.id === 4) return next();
-
+      // console.log(readers._src.bands.count());
       var writer = pixels.createWriteStream(output);
       reader.pipe(writer).on('close', function() {
         assert.pass('Completed copy of band ' + reader.metadata.id);
