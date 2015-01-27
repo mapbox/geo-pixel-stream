@@ -6,7 +6,7 @@
 
 ## PixelReader streams
 
-Create a streams that reads pixels from each band of a source image:
+Create streams that read pixels from each band of a source image:
 
 ```js
 var pixels = require('pixel-stream');
