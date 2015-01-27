@@ -1,5 +1,7 @@
 # pixel-stream
 
+[![Build Status](https://travis-ci.org/mapbox/pixel-stream.svg?branch=master)](https://travis-ci.org/mapbox/pixel-stream)
+
 [wip] Node.js streams for reading/writing/transforming pixels using node-gdal
 
 ## PixelReader streams
