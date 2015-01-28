@@ -1,6 +1,6 @@
 # geo-pixel-stream
 
-[![Build Status](https://travis-ci.org/mapbox/geo-pixel-stream.svg?branch=master)](https://travis-ci.org/mapbox/pixel-stream)
+[![Build Status](https://travis-ci.org/mapbox/geo-pixel-stream.svg?branch=master)](https://travis-ci.org/mapbox/geo-pixel-stream)
 
 [wip] Node.js streams for reading/writing/transforming pixels using node-gdal
 
@@ -34,13 +34,14 @@ console.log(readers[0].metadata);
 // }
 ```
 
-Each PixelReader is a [Node.js readable stream](http://nodejs.org/api/stream.html#stream_class_stream_readable). The stream's `data` event will emit objects indicating the offset (in terms of blocks, not pixels), and a TypedArray of pixel data.
+Each PixelReader is a [Node.js readable stream](http://nodejs.org/api/stream.html#stream_class_stream_readable). The stream's `data` event will emit objects indicating the offset (in terms of blocks, not pixels), block size (in pixels) and a TypedArray of pixel data.
 
 ```js
 readers[0].once('data', function(data) {
   console.log(data);
   // {
   //   offset: { x: 0, y: 0 },
+  //   blockSize: { x: 1541, y: 1 },
   //   buffer: [ Uint8TypedArray ]
   // }
 });
