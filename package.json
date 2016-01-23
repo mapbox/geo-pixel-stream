@@ -1,6 +1,6 @@
 {
   "name": "geo-pixel-stream",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/mapbox/geo-pixel-stream",
   "dependencies": {
-    "gdal": "~0.7.0"
+    "gdal": "^0.8.0"
   },
   "devDependencies": {
     "mapnik": "^3.1.4",
