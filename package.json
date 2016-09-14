@@ -17,10 +17,10 @@
   },
   "homepage": "https://github.com/mapbox/geo-pixel-stream",
   "dependencies": {
-    "gdal": "^0.8.0"
+    "gdal": "~0.9.3"
   },
   "devDependencies": {
-    "mapnik": "^3.1.4",
+    "mapnik": "~3.5.14",
     "mapnik-test-data": "https://mapbox-npm.s3.amazonaws.com/package/mapnik-test-data-2.0.3-fece0a9c546074a1479e9eae2333184029bb2279.tgz",
     "mkdirp": "^0.5.0",
     "queue-async": "^1.0.7",
