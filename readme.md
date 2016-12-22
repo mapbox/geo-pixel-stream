@@ -9,7 +9,7 @@
 Create streams that read pixels from each band of a source image:
 
 ```js
-var pixels = require('geo-pixel-stream');
+var pixels = require('@mapbox/geo-pixel-stream');
 var dcrgb = 'node_modules/mapnik-test-data/data/geotiff/DC_rgb.tif';
 var readers = pixels.createReadStreams(dcrgb);
 ```
