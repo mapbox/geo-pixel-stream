@@ -1,5 +1,5 @@
 {
-  "name": "geo-pixel-stream",
+  "name": "@mapbox/geo-pixel-stream",
   "version": "0.4.0",
   "description": "",
   "main": "index.js",
