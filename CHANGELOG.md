@@ -1,3 +1,7 @@
+### 0.5.0
+
+- Upgraded to use mapnik 3.6.0
+
 ### 0.4.0
 
 - Update node-mapnik@3.5.14
