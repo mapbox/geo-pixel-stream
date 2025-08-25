@@ -120,7 +120,7 @@ var readers = pixels.createReadStreams(dcrgb);
 var writers = pixels.createWriteStreams(outputFile);
 var transform = pixels.createTransformStream(processPixels);
 
-readers[0].pipe(transform).pipe(writers[0]).on('close', function() {
+readers[0].pipe(transform).pipe(writers[0]).on('finish', function() {
   console.log('All done!');
 });
 ```
