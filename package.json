@@ -1,6 +1,6 @@
 {
   "name": "@mapbox/geo-pixel-stream",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -26,5 +26,8 @@
     "queue-async": "^1.0.7",
     "tape": "^3.4.0",
     "underscore": "^1.7.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
